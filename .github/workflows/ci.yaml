@@ -75,7 +75,7 @@ jobs:
 
             - name: update tag in k8s deployment manifest
               run: |
-                    sed -i "s|image: .*|image: prajwalg42/product-catalog:${{ github.run_id }}|" kubernetes/product-catalog/deploy.yaml
+                    sed -i "s|image: .*|image: prajwalg42/product-catalog:${{ github.run_id }}|" kubernetes/productcatalog/deploy.yaml
 
             - name: Commit and push changes
               run: |
